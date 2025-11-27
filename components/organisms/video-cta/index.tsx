@@ -8,11 +8,11 @@ export const VideoCTA = () => {
 
   return (
     <div
-      className="relative bg-[#030303] rounded-[20px] px-8 py-8 md:px-12 md:py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+      className="relative bg-[#030303] rounded-[20px] px-8 py-8  flex flex-col md:flex-row items-start md:items-center justify-between gap-5"
       style={{
         border: "1px solid transparent",
         backgroundImage:
-          "linear-gradient(#030303, #030303), linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 255, 5, 0) 60%, rgba(0, 255, 5, 0.6) 100%)",
+          "linear-gradient(#030303, #030303), linear-gradient(-1deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 255, 5, 0) 60%, rgba(0, 255, 5, 0.6) 100%)",
         backgroundOrigin: "border-box",
         backgroundClip: "padding-box, border-box",
       }}
@@ -23,15 +23,15 @@ export const VideoCTA = () => {
           className="text-white text-[24px] md:text-[32px] leading-[1.1] font-normal mb-3"
           style={{ fontFamily: "General Sans, Satoshi, sans-serif" }}
         >
-          Learn During A Private 1:1 Meeting What Has Been Hidden In Plain Sight
-          Within The Markets.
+          Book a call, get clarity, and enroll into the 
+          <br/>Lifetime TMU Membership.
         </h2>
-        <p
+        {/* <p
           className="text-white text-[14px] md:text-[16px] leading-[1.5] font-normal max-w-[667px]"
           style={{ fontFamily: "Satoshi, sans-serif" }}
         >
           Once you see it, you can&apos;t unsee it. It&apos;s Time & Price.
-        </p>
+        </p> */}
       </div>
 
       {/* Right Side - CTA Button */}
@@ -39,7 +39,7 @@ export const VideoCTA = () => {
         <Button
           onClick={() => router.push("/book")}
           variant="cta"
-          className="!w-full md:!w-[214px]"
+          className="!w-fit md:!w-[214px]"
         >
           SCHEDULE NOW
           <svg
