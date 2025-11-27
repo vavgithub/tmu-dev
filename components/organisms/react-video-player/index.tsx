@@ -26,7 +26,7 @@ export const ReactVideoPlayer = ({
             e.stopPropagation();    
             setMuted(!muted)
         }}
-        className={`absolute bg-black/40 p-3 rounded-full transition-opacity duration-100 ease-linear cursor-pointer top-6 left-6 flex items-center justify-center z-50`}
+        className={`absolute bg-black/40 p-3 rounded-full transition-opacity duration-100 ease-linear cursor-pointer top-3 sm:top-6 left-3 sm:left-6 flex items-center justify-center z-50`}
       >
         <div className="flex flex-col gap-4 md:gap-12 justify-center items-center ">
           <div className="text-white ">
