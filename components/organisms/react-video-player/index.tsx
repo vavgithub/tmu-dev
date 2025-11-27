@@ -70,16 +70,18 @@ export const ReactVideoPlayer = ({
           </div>
         </div>
       </div>
-      <ReactPlayer
-        ref={ref}
-        src={videoUrl}
-        playing={true}
-        muted={muted}
-        controls={showControls}
-        loop={loop}
-        width="100%"
-        height="100%"
-      />
+      <div className="pointer-events-none">
+        <ReactPlayer
+            ref={ref}
+            src={videoUrl}
+            playing={true}
+            muted={muted}
+            controls={showControls}
+            loop={loop}
+            width="100%"
+            height="100%"
+        />
+      </div>
     </div>
   );
 };
