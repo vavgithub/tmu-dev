@@ -20,34 +20,18 @@ export const ReactVideoPlayer = ({
   const [muted, setMuted] = useState<boolean>(true);
 
   return (
-    <div className={`relative  w-full h-full ${className}`}>
-      <div
-        onClick={(e) => {
+    <div         
+      onClick={(e) => {
             e.stopPropagation();    
             setMuted(!muted)
-        }}
-        className={`absolute bg-black/40 p-3 rounded-full transition-opacity duration-100 ease-linear cursor-pointer top-3 sm:top-6 left-3 sm:left-6 flex items-center justify-center z-50`}
+        }} 
+        className={`relative  w-full h-full ${className}`}>
+      <div
+        className={`absolute  transition-opacity duration-100 ease-linear cursor-pointer scale-200 md:scale-400 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  z-50`}
       >
-        <div className="flex flex-col gap-4 md:gap-12 justify-center items-center ">
+        <div className="flex flex-col justify-center items-center ">
           <div className="text-white ">
-            {!muted ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-volume2-icon lucide-volume-2"
-              >
-                <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z" />
-                <path d="M16 9a5 5 0 0 1 0 6" />
-                <path d="M19.364 18.364a9 9 0 0 0 0-12.728" />
-              </svg>
-            ) : (
+            {muted && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

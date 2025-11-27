@@ -69,9 +69,9 @@ export const FunnelPageTemplate = () => {
           </div>
 
           {/* Two Column Grid: Video wider than form - Centered */}
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-32 max-w-[1140px] w-full h-full mb-16 px-6 lg:px-0 ">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-8 max-w-[1140px] w-full h-full mb-16 px-6 lg:px-0 ">
             {/* Left Column - Video (wider, first on mobile) */}
-            <div className="w-full relative max-w-[30rem] md:max-w-[37rem] aspect-square border border-[rgba(255, 255, 255, 0.13)]  overflow-hidden rounded-4xl flex flex-col items-center ">
+            <div className="w-full relative max-w-[30rem] md:max-w-[56rem] h-full   overflow-hidden rounded-4xl flex flex-col items-center ">
               {/* <VideoPlayer exitIntentOpen={showModal} className=" relative overflow-hidden " /> */}
               <div className="absolute bottom-3 sm:bottom-8 right-3 sm:right-8  z-20">
                 <div className="flex gap-2 sm:gap-5 items-end">
@@ -87,7 +87,7 @@ export const FunnelPageTemplate = () => {
                 </div>
                 </div>
               </div>
-              <ReactVideoPlayer videoUrl="https://d2zc0gy08nitgj.cloudfront.net/video-data/Mobile_Out_Now4V2(1)_cropped.mp4" />
+              <ReactVideoPlayer videoUrl="https://d2zc0gy08nitgj.cloudfront.net/video-data/Out_now_Reel4_v2_cropped.mp4" />
             </div>
 
             {/* Right Column - Form */}

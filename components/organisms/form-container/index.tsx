@@ -18,7 +18,7 @@ export const FormContainer = ({ children, className }: FormContainerProps) => {
         minHeight: "auto",
       }}
     >
-      <div className="absolute -top-[52%] left-1/2 -translate-x-1/2 h-[170%] w-[240%] -z-10">
+      <div className="absolute -top-[52%] left-1/2 -translate-x-1/2 h-[175%] w-[240%] -z-10">
           <Image
             src="/form-gradient-bg.png"
             alt=""
