@@ -70,11 +70,12 @@ export const ReactVideoPlayer = ({
           </div>
         </div>
       </div>
-      <div className="pointer-events-none">
+      <div className="pointer-events-none video-no-events ">
         <ReactPlayer
             ref={ref}
             src={videoUrl}
             playing={true}
+            playsInline
             muted={muted}
             controls={showControls}
             loop={loop}
