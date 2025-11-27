@@ -79,7 +79,7 @@ export const MovieWatchTemplate = () => {
             playerId="vid-6924ba788dbc00147a278f10"
             scriptSrc="https://scripts.converteai.net/2f1a2a53-b695-4680-8c86-09db4b468975/players/6924ba788dbc00147a278f10/v4/player.js"
           /> */}
-          <ReactVideoPlayer videoUrl="https://d2zc0gy08nitgj.cloudfront.net/video-data/Out_now_Reel4_v2_cropped.mp4" />
+          <ReactVideoPlayer showControls videoUrl="https://d2zc0gy08nitgj.cloudfront.net/video-data/Out_now_Reel4_v2_cropped.mp4" />
         </div>
 
         {/* CTA Section with glow flex justify-center items-center */}

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Disclaimer = () => {
   return (
-    <div className="w-full bg-black border-t border-white/10 py-8 px-4 mt-auto relative ">
+    <div className="w-full bg-black border-t border-white/10 py-8 px-4 mt-auto relative z-20">
       <div className="max-w-7xl flex flex-col gap-6 md:flex-row justify-between items-center mx-auto">
         {/* Disclaimer Text */}
         {/* <div className="text-center mb-4">

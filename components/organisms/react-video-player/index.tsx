@@ -26,7 +26,7 @@ export const ReactVideoPlayer = ({
             e.stopPropagation();    
             setMuted(!muted)
         }}
-        className={`fixed sm:absolute bg-black/40 p-3 rounded-full transition-opacity duration-100 ease-linear cursor-pointer sm:top-6 right-8 sm:right-auto sm:bottom-auto bottom-8 sm:left-6 flex items-center justify-center z-50`}
+        className={`absolute bg-black/40 p-3 rounded-full transition-opacity duration-100 ease-linear cursor-pointer top-6 left-6 flex items-center justify-center z-50`}
       >
         <div className="flex flex-col gap-4 md:gap-12 justify-center items-center ">
           <div className="text-white ">
@@ -70,13 +70,14 @@ export const ReactVideoPlayer = ({
           </div>
         </div>
       </div>
-      <div className="pointer-events-none video-no-events">
+      <div >
         <ReactPlayer
             ref={ref}
             src={videoUrl}
             playing={true}
             muted={muted}
             controls={showControls}
+            playsInline
             loop={loop}
             width="100%"
             height="100%"
